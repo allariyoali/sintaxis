@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <title>SuperMaster JS</title>
+
+</head>
+
+<body>
+    <!--agrega una imagen al fondo-->
+    <!--Personaliza la funte de la página web-->
+    <div class="container">
+        <center>
+
+            <h1 style="font-size: 45px;"> <kbd>Super Reto JS</kbd> </h1>
+            <br>
+            <br>
+
+            <div>
+                Escribe tu nombre en el input
+
+                <input type="text" id="nombre" style="width:30%" class="form-control">
+                <hr>
+
+            </div>
+
+            <div>
+                Escribe tu apellido
+                <input type="text" id="apellido" style="width:30%" class="form-control">
+                <hr>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-secondary " id="enviar_apellido" style="width:30%"
+                    onclick="send2()"> <span class="glyphicon glyphicon-send"></span> </button>
+
+                <hr>
+
+            </div>
+
+            <div>
+                Muestra tu nombre y apellido
+
+                <div id="nombre_completo" style="width:30%" class="btn btn-info"></div>
+                <br>
+                <hr>
+            </div>
+
+            <div>
+                Imprime el número de caracteres de tu nombre completo
+
+                <div id="longitud_nombre_completo" style="width:30%" class="btn-warning"></div>
+
+                <br>
+                <hr>
+            </div>
+            <div class="bg-primary movie_head" data-toggle="collapse" data-target="#instrucciones">
+
+                Realiza las siguientes instrucciones y comprueba
+                <span class="glyphicon glyphicon-chevron-down"></span>
+            </div>
+            <div id="instrucciones" class="collapse">
+                <div class="movie_text">
+                    <p> A la longitud de tu nombre completo súmale 3
+                        <br> Multiplica por 2.
+                        <br> Súmale 4.
+                        <br> Divide entre 2.
+                        <br> Quítale el número con el que iniciamos.
+                    </p>
+
+                    <button class="btn btn-primary" onclick="check();">verificar <span
+                            class="glyphicon glyphicon-ok"></span></button>
+                    <!--si el número final es igual a  5 imprimir correcto en el siguiente elemento-->
+                    <br>
+
+                    <h3 class=" btn btn-success" id="correcto"></h3>
+
+                </div>
+            </div>
+
+            <hr>
+
+
+            <div>
+                divide el número  de caractéres de tu nombre completo entre 8, si hay decimales elimínalos
+                <h3 id="resultado_entre_8" style="width:30%" class="form-control"></h3>
+                <br>
+                <hr>
+            </div>
+
+            <div>
+                Imprime un número aleatorio menor a 1 y raedondealo al primer decimal.
+                <h3 id="random_number" style="width:30%" class="form-control"></h3>
+                <br>
+                <hr>
+            </div>
+
+            <div>
+                Conviertelo en un número entero.
+                <h3 id="random_number_entero" style="width:30%" class="form-control"></h3>
+
+                <br>
+                <hr>
+            </div>
+
+            
+
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+        </center>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+
+
+
+</html>
